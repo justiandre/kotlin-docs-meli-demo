@@ -1,0 +1,9 @@
+# Objetivo e motivação
+
+O objetivo desse documento é contextualizar as vantagens e desvantagens sobre o uso do Kotlin, para casos de uso simples, direcionados a microservices de CRUD, na equipe do Mercado Livre/Mercado Envios UCS, visto que hoje (Abril/2020) todas as API's desse time são na linguagem Golang, o que vem se mostrando muito improdutiva nos casos de uso citados anteriormente, esse é o relato de vários membros da equipe, vale frisar que alguns microservices ainda serão feitos em Golang.
+
+## Porque Kotlin
+
+Inicialmente existia a ideia de além de Golang a equipe utilizar JS (NodeJS) para desenvolvimento Backend ou Python, porém a alguns meses foi definido como linguagens oficiais para o desenvolvimento backend apenas, Golang e Java, como mostrado nesse [post](https://meli.workplace.com/groups/795726780557012/permalink/2293580390771636/), com isso e também sabendo que a empresa não daria suporte para outras plataformas e linguagens, com isso resolvemos utilizar alguma linguagem [JVM based](https://en.wikipedia.org/wiki/List_of_JVM_languages), no caso Kotlin, assim como é feito por outras equipes, como as aplicações da vertical de negócio [Mercado Shop](https://www.mercadoshops.com.br/) e Seller Invoice, vale citar que adotando Kotlin, conseguiremos utilizar tudo que já foi lançado e será lançado pela empresa em Java (que hoje é a maioria das aplicações), visto que Kotlin é totalmente integrada com Java.
+
+Outros dois pontos que vale ressaltar é que queremos utilizar Kotlin para os cenários CRUD ou que exigem uma modelagem de negócio mais complexa, onde linguagens orientadas a objeto se mostram melhor para isso e que também iremos desenvolver para a plataforma [Android](https://developer.android.com/) no [aplicativo de Drivers](https://github.com/mercadolibre/mercadoenvios-driver_android) feito inicialmente pela equipe do Mercado Livre/Mercado Envios de Logitics que também utiliza Kotlin.
